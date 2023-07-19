@@ -292,11 +292,15 @@ header{
 
   /* Instant Play */
   .instant_play{
+    margin-top: 100px;
     max-width: 1920px;
     max-width: 5927px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* border: 2px solid red; */
+    height: 800px;
+
 }
 
 .instat_play_text > div{
@@ -343,7 +347,70 @@ header{
     right: 180px;
 }
 
+/* Carrer */
+.carrer_text h1{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+    text-align: center;
 
+}
+.carrer{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.carrer_text p{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    /* text-align: center; */
+    margin-left: 25px;
+
+}
+.carrer_list{
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 200% */
+    
+    
+}
+.carrer_list LI{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.see_all_btn{
+   
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border: none;
+    color: rgb(255, 66, 165);
+    border-radius: 70px;
+    height: 60px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+   
+}
 @media screen and (max-width: 576px) {
     header{
         padding: 5px;
@@ -369,35 +436,53 @@ header{
             grid-template-columns: 1fr;
         }
         .online_gamer h1{
-            width: 400px;
-            font-size: 25px;
+            width: 300px;
+            font-size: 20px;
         }
         .online_gamer h1>span{
             width: 300px;
-            font-size: 25px;
+            font-size: 20px;
         }
         .online_gamer p{
             font-size: 10px;
         }
         .instant_play{
             flex-direction: column;
-            margin-top: 250px;
+            margin-top: 350px;
         }
         /* .instat_play_text > div{
             grid-template-columns: 1fr;
         
         } */
         .instant_play_img img{
-            width: 40%;
+            width: 100%
             /* padding: 50px */
 
         }
         .inner_play{
-            /* width: 50%; */
+            width: 40%;
             /* padding: 50px; */
             left: 0px;
             top: -90px;
 
             
+        }
+        .carrer{
+            margin-top: 150px;
+            flex-direction: column;
+           
+        }
+        .carrer_text{
+            flex-direction: column;
+            font-size: 15px;
+        }
+        .carrer_list{
+            font-size: 15px;
+        }
+        .carrer_img img{
+            width: 100%;
+        }
+        .carrer_text p{
+            font-size: 10px;
         }
     }
