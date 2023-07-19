@@ -3,6 +3,7 @@
 font-family: 'Work Sans', sans-serif;
 margin: 0px;
 padding: 0px;
+
 }
 header{
     padding: 40px 240px;
@@ -15,7 +16,7 @@ header{
 /* NavBar */
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -23,6 +24,7 @@ header{
     display: flex;
     gap: 24px;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .nav_logo p{
@@ -105,7 +107,7 @@ header{
 .banner_text{
     display: grid;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     background-image: url("../images/Group14.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +190,158 @@ header{
     width: 100%;
 }
 
+/* Online Gamer */
+.online_gamer{
+    /* text-align: center; */
+    max-width: 1920px;
+    max-width: 5927px;
+    
 
+    
+}
+.online_gamer h1{
+    color: #0B0223;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 1100px;
+}
+.online_gamer h1 >span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+.online_gamer p{
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    padding-bottom: 15px;
+}
+
+.online_image{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+.online_image figcaption{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+}
+
+  .container{
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    /* background-color: red; */
+  }
+  .ip{
+    color: black;
+    text-transform: uppercase;
+    font-size: larger;
+    
+ }
+
+  .container:hover .overlay{
+    opacity: 1;
+  }
+  
+.icon, .fa-play{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .fa-play:hover {
+    color: #eee;
+  }
+
+
+  /* Instant Play */
+  .instant_play{
+    max-width: 1920px;
+    max-width: 5927px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instat_play_text > div{
+    display: grid;
+    /* border: 2px solid red; */
+    position: relative;
+    bottom: 200px;
+
+}
+  .instant_play h1{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+
+  }
+  .instant_play p{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+  }
+
+  .instant_play h1 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+#r55{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+
+}
+.inner_play{
+    position: relative;
+    bottom: 300px;
+    right: 180px;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -209,4 +362,42 @@ header{
         .banner{
             flex-direction: column-reverse;
         }
-}
+        .online_gamer{
+            flex-direction: column;
+        }
+        .online_image{
+            grid-template-columns: 1fr;
+        }
+        .online_gamer h1{
+            width: 400px;
+            font-size: 25px;
+        }
+        .online_gamer h1>span{
+            width: 300px;
+            font-size: 25px;
+        }
+        .online_gamer p{
+            font-size: 10px;
+        }
+        .instant_play{
+            flex-direction: column;
+            margin-top: 250px;
+        }
+        /* .instat_play_text > div{
+            grid-template-columns: 1fr;
+        
+        } */
+        .instant_play_img img{
+            width: 40%;
+            /* padding: 50px */
+
+        }
+        .inner_play{
+            /* width: 50%; */
+            /* padding: 50px; */
+            left: 0px;
+            top: -90px;
+
+            
+        }
+    }
