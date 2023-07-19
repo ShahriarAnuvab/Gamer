@@ -414,21 +414,24 @@ header{
 
 /* Games */
 .games{
-    padding: 150px;
+    padding: 50px;
     /* margin-top: 20px; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     align-items: center;
     justify-content: space-evenly;
+    /* border: 1px solid red; */
+    height: 200px;
+
 }
 .games div{
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px
-    ;
+    gap: 20px;
+    text-align: center;
 }
 .p_games img{
     width: 60px;
@@ -439,7 +442,7 @@ header{
 
 .p_games p{
     color: #0B0223;
-    font-size: 20px;
+    font-size: 18x;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -537,8 +540,12 @@ header{
         }
         .games{
             grid-template-columns: repeat(3, 1fr);
+            height: 100%;
         }
         .games div{
             flex-direction: column;
+        }
+        .games p{
+            font-size: 10px;
         }
     }
