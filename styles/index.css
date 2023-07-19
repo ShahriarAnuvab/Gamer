@@ -449,7 +449,7 @@ header{
 
 }
 .games div:hover{
-    border: 1px solid rgb(255, 66, 165);
+    border: 3px solid rgb(255, 66, 165);
     color: rgb(255, 66, 165);
     border-radius: 55px;
 }
@@ -460,10 +460,49 @@ header{
     cursor: pointer;
 }
 
+footer{
+    padding: 50px;
+    background: #0B0223;
+}
+.footer_head{
+    display: flex;
+    color: #FFF;
+    text-align: center; 
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
-
-
-
+.footer_head span{
+    color: rgb(255, 66, 165);
+}
+.footer_text{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    /* justify-content: space-around; */
+    color: #FFF;
+    list-style: none;
+    /* gap: 50px; */
+    padding: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.footer_icon{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(6, 100px);
+    list-style: none;
+}
+/* Responsive */
 @media screen and (max-width: 576px) {
     header{
         padding: 5px;
