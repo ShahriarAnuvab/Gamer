@@ -459,7 +459,7 @@ header{
     color: rgb(255, 66, 165);
     cursor: pointer;
 }
-
+/* Footer */
 footer{
     padding: 50px;
     background: #0B0223;
@@ -612,5 +612,23 @@ footer{
         }
         .games p{
             font-size: 10px;
+        }
+        .footer_text{
+            grid-template-columns: repeat(3, 1fr);
+            font-size: 9px;
+            gap: 20px;
+        }
+        .footer_icon{
+            grid-template-columns: repeat(3, 90px);
+            /* gap: 40px; */
+            /* justify-content: center; */
+            margin-left: 5px;
+            gap: 20px;
+            
+        }
+        .footer_text2{
+            display: grid;
+            grid-template-columns: repeat(2,200px);
+            gap: 20px;
         }
     }
