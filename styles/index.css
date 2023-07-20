@@ -58,7 +58,8 @@ header{
 
 .dropdown ul li{
     list-style: none;
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    padding: 15px;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -350,6 +351,8 @@ header{
     right: 180px;
 }
 
+
+
 /* Carrer */
 .carrer_text h1{
     color: #FFF;
@@ -390,9 +393,12 @@ header{
     
     
 }
-.carrer_list LI{
+.carrer_list li{
     list-style-type: none;
     padding: 5px;
+}
+.carrer_list li:hover{
+    cursor: pointer;
 }
 
 .see_all_btn{
@@ -523,6 +529,9 @@ footer{
     padding:55px;
     
 }
+.footer_icon .footer_text2 li:hover{
+    cursor: pointer;
+}
 .copyright{
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
@@ -591,6 +600,7 @@ footer{
 
             
         }
+
         .carrer{
             margin-top: 200px;
             flex-direction: column;
