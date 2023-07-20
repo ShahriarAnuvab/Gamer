@@ -420,8 +420,8 @@ header{
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     align-items: center;
-    justify-content: space-evenly;
-    /* border: 1px solid red; */
+    justify-content: center;
+    border: 1px solid red;
     height: 200px;
 
 }
@@ -432,14 +432,15 @@ header{
     justify-content: center;
     gap: 20px;
     text-align: center;
+    
 }
 .p_games img{
     width: 60px;
     height: 60px;
-    flex-shrink: 0;
+    display: grid;
+    align-items: center;
 
 }
-
 .p_games p{
     color: #0B0223;
     font-size: 18x;
