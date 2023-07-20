@@ -529,7 +529,10 @@ footer{
     padding:55px;
     
 }
-.footer_icon .footer_text2 li:hover{
+.footer_text2:hover li{
+    cursor: pointer;
+}
+.footer_text:hover li{
     cursor: pointer;
 }
 .copyright{
