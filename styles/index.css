@@ -669,6 +669,12 @@ footer{
 
             
         }
+        .instant_play_img img{
+            width: 100%
+            /* padding: 50px */
+
+        }
+        
         .carrer{
             margin-top: 600px;
             flex-direction: column;
